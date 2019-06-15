@@ -1,0 +1,62 @@
+@import "../../style/global.scss";
+
+$rootName: x-radio;
+
+.#{$rootName}-wrapper {
+  margin-right: $margin-x;
+
+  &.#{$rootName}-checked {
+    .#{$rootName} {
+      border-color: $info-text-color;
+
+      &::before {
+        background: $info-text-color;
+      }
+    }
+  }
+
+  &.#{$rootName}-disabled,
+  &.#{$rootName}-readonly {
+    .#{$rootName} {
+      border-color: $placeholder-color;
+      background: $placeholder-color-light;
+      cursor: not-allowed;
+    }
+
+    &.#{$rootName}-checked {
+      .#{$rootName} {
+        &::before {
+          background: $placeholder-color;
+        }
+      }
+    }
+  }
+
+  .#{$rootName} {
+    position: relative;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background-color: #fff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: $border-color;
+    border-radius: 50%;
+    transition: all $duration;
+    margin-right: $margin-x-small;
+    vertical-align: sub;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 60%;
+      height: 60%;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      background: transparent;
+      transition: all $duration;
+    }
+  }
+}

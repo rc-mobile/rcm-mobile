@@ -1,0 +1,6 @@
+{
+  "name": "Radio",
+  "version": "0.0.1",
+  "main": "./Radio.tsx",
+  "types": "./Radio.tsx"
+}

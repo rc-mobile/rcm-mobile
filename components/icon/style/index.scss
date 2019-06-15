@@ -1,0 +1,9 @@
+@import "../../style/global.scss";
+
+$rootName: x-icon;
+
+.#{$rootName} {
+  font-size: $font-size;
+  display: inline-block;
+  transition: transform .3s;
+}

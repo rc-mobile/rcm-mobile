@@ -1,0 +1,29 @@
+@import "../../style/global.scss";
+
+$rootName: x-list;
+
+.#{$rootName} {
+  &-header,
+  &-footer {
+    padding: $padding-y $padding-x;
+    font-size: $font-size-small;
+    color: $text-color-light;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  &-body {
+    position: relative;
+    background-color: $background-color-light;
+
+    .x-list-item {
+      > div {
+        border-bottom: 1px solid $border-color;
+      }
+
+      &:last-child > div {
+        border-width: 0;
+      }
+    }
+  }
+}

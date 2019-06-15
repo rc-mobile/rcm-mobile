@@ -1,0 +1,6 @@
+{
+  "name": "Panel",
+  "version": "0.0.1",
+  "main": "./Panel.tsx",
+  "types": "./Panel.tsx"
+}

@@ -1,0 +1,25 @@
+@import "../../style/global.scss";
+
+$rootName: x-panel;
+
+.#{$rootName} {
+  .x-list-body {
+    > div:first-child {
+      padding-left: 0;
+
+      > div:first-child {
+        padding-left: $padding-x;
+      }
+    }
+  }
+
+  .x-panel-title {
+    .x-list-item-line {
+      border-width: 0;
+    }
+  }
+
+  &-body {
+    border-top: 1px solid $border-color;
+  }
+}

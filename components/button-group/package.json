@@ -1,0 +1,6 @@
+{
+  "name": "ButtonGroup",
+  "version": "0.0.1",
+  "main": "./ButtonGroup.tsx",
+  "types": "./ButtonGroup.tsx"
+}

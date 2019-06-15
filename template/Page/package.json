@@ -1,0 +1,6 @@
+{
+  "name": "__componentName__",
+  "version": "0.0.1",
+  "main": "./__componentName__.tsx",
+  "types": "./__componentName__.tsx"
+}

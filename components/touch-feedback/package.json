@@ -1,0 +1,6 @@
+{
+  "name": "TouchFeedback",
+  "version": "0.0.1",
+  "main": "./TouchFeedback.tsx",
+  "types": "./TouchFeedback.tsx"
+}

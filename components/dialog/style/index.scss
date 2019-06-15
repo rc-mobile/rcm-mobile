@@ -1,0 +1,72 @@
+@import "../../style/global.scss";
+
+$rootName: x-dialog;
+$font-size: 30px;
+
+.#{$rootName} {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  &-container {
+    box-sizing: border-box;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 560px;
+    border-radius: $border-radius;
+    background: #fff;
+  }
+
+  &-content {
+    margin: 40px;
+    text-align: center;
+  }
+
+  &-title {
+    margin-bottom: 20px;
+    padding: 0;
+    font-size: $font-size-large;
+    color: $text-color;
+    line-height: 1;
+    font-weight: 400;
+  }
+
+  &-message {
+    color: $text-color-light;
+    font-size: $font-size;
+    margin: 20px 0;
+    @extend %word-break;
+  }
+
+  &-operate {
+    display: flex;
+    border-top: 1px solid $border-color;
+    text-align: center;
+    font-size: $font-size-large;
+
+    &-ok, &-cancel {
+      flex: 1;
+      padding: 24px;
+    }
+
+    &-ok {
+      order: 1;
+      color: $link-color;
+    }
+
+    &-cancel {
+      order: 0;
+      color: $text-color;
+      border-right: 1px solid $border-color;
+    }
+  }
+}
+.#{$rootName}-root {
+  .x-popup-mask {
+    background-color: $mask-background-color;
+  }
+}

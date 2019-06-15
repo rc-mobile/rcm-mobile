@@ -1,0 +1,30 @@
+@import "../../style/global.scss";
+
+$rootName: x-input-item;
+
+.#{$rootName} {
+  .x-list-item {
+    padding-left: 0;
+  }
+
+  .x-list-item-line {
+    padding-right: 0;
+
+    &-content {
+      flex: none;
+      width: 5em;
+    }
+
+    &-extra {
+      flex: 1;
+
+      .x-input-wrap {
+        width: 100%;
+        border-width: 0;
+        text-align: right;
+        color: $text-color;
+      }
+    }
+  }
+
+}

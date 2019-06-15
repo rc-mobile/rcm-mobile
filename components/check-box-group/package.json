@@ -1,0 +1,6 @@
+{
+  "name": "CheckBoxGroup",
+  "version": "0.0.1",
+  "main": "./CheckBoxGroup.tsx",
+  "types": "./CheckBoxGroup.tsx"
+}

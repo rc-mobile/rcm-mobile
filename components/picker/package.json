@@ -1,0 +1,6 @@
+{
+  "name": "Picker",
+  "version": "0.0.1",
+  "main": "./Picker.tsx",
+  "types": "./Picker.tsx"
+}

@@ -1,0 +1,26 @@
+@import "./common/reset.scss";
+@import "./common/helper.scss";
+@import "//at.alicdn.com/t/font_686328_sgwknrzrw3r.css";
+
+// 基础样式
+.x-disabled {
+  opacity: .4;
+
+  &:active::before {
+    background: transparent;
+  }
+}
+
+// 动画
+.x-amt-spin {
+  animation: x-amt-spin 1s linear infinite;
+}
+
+@keyframes x-amt-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

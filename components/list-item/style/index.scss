@@ -1,0 +1,110 @@
+@import "../../style/global.scss";
+
+$rootName: x-list-item;
+
+.#{$rootName} {
+  transition: background-color $duration;
+  display: flex;
+  align-items: center;
+  padding-left: $padding-x-large;
+  min-height: 40px;
+  background-color: $background-color;
+  overflow: hidden;
+
+  &:last-child {
+    border: none;
+  }
+
+  &-active {
+    background-color: $background-color-dark;
+  }
+
+  .x-disabled {
+    color: $disable-text-color;
+
+    .x-list-item-line {
+      .x-list-item-line-content,
+      .x-list-item-line-extra,
+      .x-list-item-line-arrow {
+        opacity: 0.5;
+        color: $disable-text-color;
+      }
+    }
+  }
+
+  /* list左图片显示*/
+  &-thumb {
+    display: flex;
+    align-items: center;
+
+    &-img {
+      width: 48px;
+      height: 48px;
+    }
+
+    &:first-child {
+      margin-right: $padding-x-small;
+    }
+  }
+
+  &-line {
+    position: relative;
+    display: flex;
+    flex: 1;
+    padding-right: $padding-x-large;
+    overflow: hidden;
+    /* list左侧主内容*/
+    &-content {
+      flex: 1;
+      padding: calc(#{$padding-y} * 2) 0;
+      color: $text-color;
+      font-size: $font-size;
+      text-align: left;
+      align-items: center;
+      @extend %ellipsis;
+
+      > div {
+        width: 100%;
+      }
+
+    }
+
+    /* list右补充内容*/
+    &-extra {
+      flex-basis: 36%;
+      color: $text-color-light;
+      font-size: $font-size;
+      text-align: right;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      @extend %ellipsis;
+    }
+
+    /* list右侧箭头*/
+    &-arrow {
+      margin-left: $margin-x;
+      display: flex;
+      align-items: center;
+      color: $placeholder-color;
+    }
+
+    &-wrap {
+      padding: $padding-y $padding-x $padding-y 0;
+
+      .x-list-item-line-content {
+        white-space: normal;
+      }
+
+      .x-list-item-line-extra {
+        white-space: normal;
+      }
+    }
+  }
+
+  &-brief {
+    margin-top: 5px;
+    font-size: $font-size-small;
+    color: $text-color-light;
+  }
+}

@@ -1,0 +1,59 @@
+@import "../../style/global.scss";
+
+$rootName: x-check-box;
+
+.#{$rootName}-wrapper {
+  margin-right: $margin-x;
+
+  &.#{$rootName}-checked {
+    .#{$rootName} {
+      background-color: $info-text-color;
+      border-color: $info-text-color;
+
+      &::before {
+        content: "\e6e0";
+      }
+    }
+  }
+
+  &.#{$rootName}-disabled,
+  &.#{$rootName}-readonly {
+    .#{$rootName} {
+      border-color: $placeholder-color;
+      cursor: not-allowed;
+      background: $placeholder-color-light;
+    }
+
+    &.#{$rootName}-checked {
+      .#{$rootName} {
+        background: $placeholder-color;
+      }
+    }
+  }
+
+  .#{$rootName} {
+    font-family: "x-icon";
+    position: relative;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    border-radius: $border-radius-small;
+    border-width: 1px;
+    border-style: solid;
+    border-color: $border-color;
+    transition: all $duration;
+    margin-right: $margin-x-small;
+    vertical-align: sub;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      font-size: 0.6rem;
+      color: #fff;
+      transform: translate(-50%, -50%);
+      transition: all $duration;
+    }
+  }
+}

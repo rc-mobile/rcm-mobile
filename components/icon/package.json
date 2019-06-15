@@ -1,0 +1,6 @@
+{
+  "name": "Icon",
+  "version": "0.0.1",
+  "main": "./Icon.tsx",
+  "types": "./Icon.tsx"
+}

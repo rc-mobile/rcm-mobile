@@ -1,0 +1,15 @@
+@import "../../style/global.scss";
+
+$rootName: x-form;
+
+.#{$rootName} {
+  .x-input-item {
+    border-bottom: 1px solid $border-color;
+    margin-left: $margin-x-small;
+    transition: border-bottom-color $duration;
+    &-warn {
+      border-bottom-color: $error-border-color;
+    }
+
+  }
+}

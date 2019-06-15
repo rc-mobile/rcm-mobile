@@ -1,0 +1,6 @@
+{
+  "name": "ActionSheet",
+  "version": "0.0.1",
+  "main": "./ActionSheet.tsx",
+  "types": "./ActionSheet.tsx"
+}

@@ -1,0 +1,6 @@
+{
+  "name": "List",
+  "version": "0.0.1",
+  "main": "./List.tsx",
+  "types": "./List.tsx"
+}

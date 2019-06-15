@@ -1,0 +1,6 @@
+{
+  "name": "Popup",
+  "version": "0.0.1",
+  "main": "./Popup.tsx",
+  "types": "./Popup.tsx"
+}

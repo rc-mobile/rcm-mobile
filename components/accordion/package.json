@@ -1,0 +1,6 @@
+{
+  "name": "Accordion",
+  "version": "0.0.1",
+  "main": "./Accordion.tsx",
+  "types": "./Accordion.tsx"
+}

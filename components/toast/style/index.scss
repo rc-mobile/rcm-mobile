@@ -1,0 +1,21 @@
+@import "../../style/global.scss";
+
+$rootName: x-toast;
+
+.#{$rootName} {
+  display: inline-block;
+  max-width: 16em;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: $border-radius;
+  padding: $padding-y $padding-x;
+  text-align: center;
+  color: #fff;
+  background-color: $mask-background-color;
+  @extend %word-break;
+
+  .x-icon {
+    font-size: 64px;
+  }
+}

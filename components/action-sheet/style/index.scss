@@ -1,0 +1,130 @@
+@import "../../style/global.scss";
+
+$rootName: x-action-sheet;
+
+.#{$rootName} {
+  background: $background-color-dark;
+
+  &-theme-action {
+    .#{$rootName}-title {
+      border-bottom: 1px solid $border-color;
+      color: $text-color-light;
+      font-size: $font-size;
+      font-weight: 400;
+      text-align: center;
+      background: $background-color;
+    }
+
+    .#{$rootName}-actions {
+      &-logo {
+        display: inline-block;
+        width: $font-size-large;
+        margin-right: $margin-x-small;
+        vertical-align: text-top;
+
+        img {
+          vertical-align: text-top;
+        }
+      }
+
+      &-text {
+        display: inline-block;
+      }
+
+      &-button {
+        border-width: 0;
+        border-top: 1px solid $border-color;
+        border-radius: 0;
+        background: $background-color;
+
+        &:first-child {
+          border-width: 0;
+        }
+      }
+    }
+  }
+
+  &-theme-actionShare {
+    .#{$rootName}-title {
+      border-bottom: 1px solid $border-color;
+      color: $text-color-light;
+      font-size: $font-size;
+      font-weight: 400;
+      text-align: center;
+    }
+
+    .#{$rootName}-actions {
+      box-sizing: border-box;
+      display: flex;
+      justify-content: start;
+      width: 100%;
+      padding: .5rem;
+      flex-wrap: wrap;
+
+      &-button {
+        box-sizing: border-box;
+        width: 20%;
+        padding: .4rem;
+        text-align: center;
+      }
+
+      &-logo {
+        position: relative;
+        display: inline-block;
+        width: 3.5rem;
+        height: 3.5rem;
+        text-align: center;
+        background: $background-color;
+        border-radius: $border-radius;
+
+        img {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 2rem;
+        }
+      }
+
+      &-text {
+        line-height: 1.2;
+
+        span {
+          @extend %ellipsis;
+          display: inline-block;
+          width: 4.1em;
+          font-size: $font-size-small;
+          color: $text-color-light;
+        }
+      }
+
+      &-button {
+        border-width: 0;
+      }
+    }
+  }
+
+  .x-disabled {
+    opacity: 1;
+
+    .#{$rootName}-actions {
+      &-logo,
+      &-text {
+        opacity: .4;
+      }
+    }
+  }
+
+  &-cancel {
+    margin-top: calc(#{$margin-y-small} / 1.5);
+    border-radius: 0;
+    border-width: 0;
+    background: $background-color;
+  }
+}
+
+.#{$rootName}-root {
+  .x-popup-mask {
+    background: $mask-background-color;
+  }
+}

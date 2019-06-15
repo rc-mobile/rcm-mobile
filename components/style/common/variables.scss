@@ -1,0 +1,147 @@
+@charset "UTF-8";
+/* 状态开关 */
+$box-border-switch: false !default;
+$active-state-switch: true !default;
+
+/* 色系 */
+$light-primary-color: #3fa7f4 !default;
+$primary-color: #208fee !default;
+$secondary-color: #eff7fe !default;
+$accent-color: #f5a738 !default;
+
+/* 文本 */
+$text-color: #333 !default;
+$text-color-dark: #000 !default;
+$text-color-light: #999 !default;
+
+/* 背景 */
+$background-color: #fff !default;
+$background-color-dark: #f5f5f5 !default;
+$background-color-light: #fff !default;
+
+/* link */
+$link-color: #2196FE !default;
+
+/* placeholder */
+$placeholder-color: #bbb !default;
+$placeholder-color-light: #e5e5e5 !default;
+
+/* 第二背景 */
+$second-background-color: #f1faff !default;
+$second-background-color-dark: #f1faff !default;
+$second-background-color-light: #f1faff !default;
+
+/* 边框 */
+$border-color: #e0e0e0 !default;
+$border-color-dark: #ddd !default;
+$border-color-light: #eee !default;
+
+/* 面板 */
+$header-background-color: $background-color-dark !default;
+$main-background-color: $background-color-light !default;
+$striped-background-color: lighten($background-color-dark, 1%) !default;
+
+/* 遮罩 */
+$mask-background-color: rgba(0, 0, 0, .6);
+
+/* 焦点 */
+$hover-background-color: #fafafa !default;
+$focus-border-color: $primary-color !default;
+
+/* 选中 */
+$selected-text-color: #fff !default;
+$selected-background-color: $primary-color !default;
+
+/* 禁用 */
+$disable-text-color: $text-color-light !default;
+$disable-background-color: $border-color-light !default;
+
+/* 状态 */
+$info-text-color: #409eff !default;
+$info-background-color: #daebf7 !default;
+$info-border-color: darken($info-background-color, 5%) !default;
+
+$success-text-color: #67c23a !default;
+$success-background-color: #d3f0d3 !default;
+$success-border-color: darken($success-background-color, 5%) !default;
+
+$warning-text-color: #e6a23c !default;
+$warning-background-color: #fcf0de !default;
+$warning-border-color: darken($warning-background-color, 5%) !default;
+
+$error-text-color: #ff3953 !default;
+$error-background-color: $error-text-color !default;
+$error-border-color: $error-background-color !default;
+
+/* 字体 */
+$font-family: "Helvetica Neue For Number", apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif !default;
+$font-family-scripts: Georgia, "Times New Roman", Times, Kai, "Kaiti SC", KaiTi, BiauKai, serif !default;
+$font-family-monospace: Monaco, Menlo, Consolas, "Courier New", "Helvetica Neue", Helvetica, "Hiragino Sans GB", "Microsoft Yahei", monospace !default;
+
+/* 字号 */
+$font-size: 1rem !default;
+$font-size-large: 1.125rem !default;
+$font-size-small: 0.8rem !default;
+
+/* 字粗 */
+$font-weight: normal !default;
+$font-weight-large: 500 !default;
+$font-weight-small: 100 !default;
+
+/* 行高 */
+$line-height: 1.5 !default;
+$line-height-large: 1.75 !default;
+$line-height-small: 1.25 !default;
+
+/* 外边距 */
+$margin-y: 1rem !default;
+$margin-x: 1rem !default;
+$margin-y-large: 1.5rem !default;
+$margin-x-large: 1.5rem !default;
+$margin-y-small: .5rem !default;
+$margin-x-small: .5rem !default;
+
+/* 内边距 */
+$padding-y: .375rem !default;
+$padding-x: 1rem !default;
+$padding-y-large: .5rem !default;
+$padding-x-large: 1.25rem !default;
+$padding-y-small: .25rem !default;
+$padding-x-small: .75rem !default;
+
+/* 空白 */
+$spacer: .5rem !default;
+$spacer-large: 1rem !default;
+$spacer-small: .25rem !default;
+
+/* 圆角 */
+$border-radius: .2rem !default;
+$border-radius-large: .25rem !default;
+$border-radius-small: .15rem !default;
+
+/* 响应式 */
+$screen-small: 640px !default;
+$screen-medium: 1024px !default;
+$screen-large: 1280px !default;
+
+/* Z-index */
+$z-index-dropdown: 900 !default;
+$z-index-fixed: 1000 !default;
+$z-index-popup: 1100 !default;
+
+/* 宽度 */
+$dropdown-min-width: 5rem;
+$dropdown-max-width: 15rem;
+$dropdown-max-height: 25rem;
+$popup-min-width: 15rem;
+$popup-max-width: 25rem;
+$input-width: 12rem;
+
+/* 动画 */
+$duration: .3s !default;
+$duration-large: .5s !default;
+$duration-small: .1s !default;
+
+/* 鼠标 */
+$cursor-help: help !default;
+$cursor-disabled: not-allowed !default;

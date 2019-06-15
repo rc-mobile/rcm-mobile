@@ -1,0 +1,6 @@
+{
+  "name": "Switch",
+  "version": "0.0.1",
+  "main": "./Switch.tsx",
+  "types": "./Switch.tsx"
+}

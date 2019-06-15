@@ -1,0 +1,11 @@
+@import "../../style/global.scss";
+
+$rootName: x-accordion;
+
+.#{$rootName} {
+  .x-panel-body {
+    > div:last-child {
+      border-bottom: 1px solid $border-color;
+    }
+  }
+}

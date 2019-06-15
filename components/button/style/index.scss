@@ -1,0 +1,118 @@
+@import "../../style/global.scss";
+
+$rootName: x-button;
+
+.#{$rootName} {
+  position: relative;
+  display: block;
+  padding: $padding-y $padding-x;
+  border: 1px solid $border-color-dark;
+  border-radius: $border-radius;
+  font-size: $font-size;
+  text-align: center;
+  color: $text-color;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  touch-action: manipulation;
+  user-select: none;
+
+  &.small {
+    padding: $padding-y-small $padding-x-small;
+    font-size: $font-size-small;
+  }
+
+  &.large {
+    padding: $padding-y-large $padding-x-large;
+    font-size: $font-size-large;
+  }
+
+  &.x-radius {
+    border-radius: 2rem;
+
+    &:active::before {
+      border-radius: 2rem;
+    }
+  }
+
+  &.x-disabled {
+    opacity: .6;
+
+    &:active::before {
+      background: transparent;
+    }
+  }
+
+  &.x-warning {
+    color: #fff;
+    background-color: $warning-text-color;
+    border: 1px solid $warning-text-color;
+  }
+
+  &.x-success {
+    color: #fff;
+    background-color: $success-text-color;
+    border: 1px solid $success-text-color;
+  }
+
+  &.x-error {
+    color: #fff;
+    background-color: $error-text-color;
+    border: 1px solid $error-text-color;
+  }
+
+  &.x-primary {
+    color: #fff;
+    background-color: $info-text-color;
+    border: 1px solid $info-text-color;
+  }
+
+  &.x-info {
+    color: $info-text-color;
+    background-color: transparent;
+    border: 1px solid $info-text-color;
+  }
+
+  &::before {
+    content: '';
+    transition: border-color ease-in-out 0.2s, background-color ease-in-out 0.2s;
+  }
+
+  &:active::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    background: rgba(0, 0, 0, .1);
+  }
+}
+
+
+.wd-button-group {
+  display: inline-block;
+  vertical-align: middle;
+
+  button {
+    display: inline;
+    width: auto !important;
+    margin-left: -1px;
+
+    &:not(:first-child):not(:last-child) {
+      border-radius: 0;
+    }
+
+    &:first-child {
+      border-bottom-right-radius: 0;
+      border-top-right-radius: 0;
+      margin-left: 0;
+    }
+
+    &:last-child {
+      border-bottom-left-radius: 0;
+      border-top-left-radius: 0;
+    }
+  }
+}

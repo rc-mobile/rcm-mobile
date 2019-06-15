@@ -1,0 +1,32 @@
+{
+  "通用类": [
+    "icon",
+    "touch-feedback"
+  ],
+  "弹层类": [
+    "popup",
+    "toast",
+    "action-sheet",
+    "dialog",
+    "picker"
+  ],
+  "列表类": [
+    "list",
+    "list-item",
+    "panel",
+    "accordion"
+  ],
+  "表单类": [
+    "input",
+    "input-item",
+    "form",
+    "form-dialog",
+    "button",
+    "button-group",
+    "radio",
+    "radio-group",
+    "check-box",
+    "check-box-group",
+    "switch"
+  ]
+}

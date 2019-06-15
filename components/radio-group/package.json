@@ -1,0 +1,6 @@
+{
+  "name": "RadioGroup",
+  "version": "0.0.1",
+  "main": "./RadioGroup.tsx",
+  "types": "./RadioGroup.tsx"
+}
