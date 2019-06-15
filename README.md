@@ -2,7 +2,7 @@
 轻松构建属于自己内部团队的组件库，配套文档和案例生成器。
 
 ## 使用文档
-[查看文档说明](https://rc-mobile.github.io/rcm-mobile/site/)
+[查看文档说明](https://rc-mobile.github.io/rcm-mobile/)
 
 ## 命令说明
 |`npm run <script>`|说明|
