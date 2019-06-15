@@ -85,7 +85,7 @@ export default class Input<T> extends React.PureComponent<InputProps & T, any> {
           ? <textarea {...props} rows={rows} />
           : <input{...props} type={this.getInputType()} />
         }
-        {clearable && value !== ''
+        {clearable && value !== '' && !('value' in this.props)
           ? <TouchFeedback activeClassName={`${prefixCls}-clear`}>
             <Icon
               className={`${prefixCls}-clear x-icon-close-circle`}
