@@ -1,0 +1,24 @@
+language: node_js
+
+node_js:
+  - "11.12.0"
+
+cache:
+  - bundler
+  - yarn
+
+before_script:
+  - yarn
+
+script:
+  - npm run deploy:doc
+
+deploy:
+  provider: pages
+  local_dir: site
+  repo: rc-mobile.github.io
+  skip_cleanup: true
+  github_token: $HEXO
+  on:
+    branch: dev
+  target_branch: gh-pages
