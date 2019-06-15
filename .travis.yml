@@ -18,7 +18,7 @@ deploy:
   local_dir: site
   repo: rc-mobile.github.io
   skip_cleanup: true
-  github_token: token
+  github_token: $token
   on:
     branch: dev
   target_branch: gh-pages
