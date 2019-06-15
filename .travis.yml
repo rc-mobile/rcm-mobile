@@ -16,7 +16,7 @@ script:
 deploy:
   provider: pages
   local_dir: site
-  repo: rc-mobile.github.io
+  repo: rc-mobile/rcm-mobile
   skip_cleanup: true
   github_token: $token
   on:
