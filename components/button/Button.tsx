@@ -38,7 +38,7 @@ export default class Button extends React.PureComponent<ButtonProps, any> {
     const {
       prefixCls, size, loadingIcon, theme, disabled: _disabled, onClick, radius,
       activeStyle, activeClassName, loading, inline, href,
-      className, children, ...resetProps
+      className, children, type, ...resetProps
     } = this.props
     const { disabled } = this.state
 
