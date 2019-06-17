@@ -19,11 +19,11 @@ export default class InputItem extends Input<InputItemProps> {
   }
 
   render() {
-    const { prefixCls, className, title, listOptions, ...resetProps } = this.props as any
+    const { prefixCls, className, title, listOptions, hidden, ...resetProps } = this.props as any
     return (
-      <div className={cls(prefixCls, className, { [`${prefixCls}-warn`]: this.state.isWarn })}>
+      <div hidden={hidden} className={cls(prefixCls, className, { [`${prefixCls}-warn`]: this.state.isWarn })}>
         <ListItem title={title} arrow={null}>
-          <Input {...resetProps} onBlur={this.handleOnBlur} ref={this.refInput} />
+          <Input hidden={hidden} {...resetProps} onBlur={this.handleOnBlur} ref={this.refInput} />
         </ListItem>
       </div>
     )

@@ -120,7 +120,7 @@ export default class Form extends React.PureComponent<FormProps, any> {
       // 单一节点进入有效表单节点队列
       this.refList[this.refKey] = React.createRef()
       const vNode = React.cloneElement(children, {
-        key: `__${this.refKey}__`,
+        key: children.key || `__${this.refKey}__`,
         ref: this.refList[this.refKey],
         noValidate: children.props.noValidate || this.props.noValidate,
         onClick: children.props.type === 'submit'

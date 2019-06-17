@@ -62,7 +62,7 @@ export default class Input<T> extends React.PureComponent<InputProps & T, any> {
     const { value, isWarn } = this.state
     const {
       prefixCls, type, rows, className,
-      disabled, clearable, onChange, requiredMessage,
+      disabled, hidden, clearable, onChange, requiredMessage,
       patternMessage, minLengthMessage, maxLengthMessage,
       autoSize, defaultValue, ...resetProps
     } = this.props
@@ -80,10 +80,10 @@ export default class Input<T> extends React.PureComponent<InputProps & T, any> {
       onChange: this.onInputChange
     }
     return (
-      <div className={`${prefixCls}-wrap ${className}`}>
+      <div hidden={hidden} className={`${prefixCls}-wrap ${className}`}>
         {type === 'textarea'
           ? <textarea {...props} rows={rows} />
-          : <input{...props} type={this.getInputType()} />
+          : <input hidden={hidden} {...props} type={this.getInputType()} />
         }
         {clearable && value !== '' && !('value' in this.props)
           ? <TouchFeedback activeClassName={`${prefixCls}-clear`}>

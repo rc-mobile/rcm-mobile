@@ -1,6 +1,6 @@
 {
   "name": "rcm-mobile",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "第二版 React 移动端组件库",
   "main": "dist/rcm-mobile",
   "types": "./components",

@@ -57,7 +57,7 @@ export default class CheckBoxGroup extends React.PureComponent<CheckBoxGroupProp
     return Array.isArray(children)
       ? children.map((radio: any) => this.handleCloneChildren(radio))
       : React.cloneElement(children, {
-        key: children.key || `__${Math.random()}__`,
+        key: children.key || `__${+new Date() + Math.random()}__`,
         checked: this.state.value.find((v: any) => v === children.props.value) !== undefined,
         disabled: disabled || children.props.disabled,
         readOnly: readOnly || children.props.readOnly,
