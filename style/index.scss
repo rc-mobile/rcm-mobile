@@ -1,0 +1,86 @@
+$body-width: 660px;
+$body-height: 1385px;
+
+#rsg-root {
+  font-size: 14px;
+
+  nav {
+    a {
+      color: #444;
+    }
+  }
+
+  blockquote {
+    border-left: 4px solid #009688 !important;
+    padding: 0 .5rem;
+    margin: 15px 0;
+
+    p {
+      height: auto !important;
+    }
+  }
+
+  // 处理组件参数展示问题
+  th {
+    &:first-child {
+      min-width: 100px;
+    }
+
+    &:nth-child(2) {
+      min-width: 400px;
+    }
+
+    min-width: 200px;
+  }
+
+  // 修复组件演示排版问题
+  article {
+    iframe {
+      border-width: 0;
+      width: $body-width;
+      height: $body-height;
+    }
+
+    > div {
+      &:nth-child(2) {
+        position: relative;
+        height: 820px;
+
+        > div {
+          border-width: 0;
+
+          &:first-child {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: auto;
+            transform: translate(-50%, -50%) scale(.5);
+          }
+
+          &:nth-child(2) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  .mobile-example {
+    background: url("../images/phone.png") no-repeat;
+    padding: 2rem 1rem 1rem;
+    background-size: 100%;
+    width: 700px;
+    height: 44rem;
+    font-size: 28px;
+
+    > div,
+    > iframe {
+      display: block;
+      width: $body-width;
+      height: $body-height;
+      margin: 0 auto;
+      border-radius: 80px;
+      overflow: hidden;
+    }
+  }
+}
